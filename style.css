@@ -1,100 +1,165 @@
-body,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    width: 13%;
-    margin-top: 0.3em;
-    padding: 2em;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-footer a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-nav img {
-    height: 20px;
-}
-
-main {
-    width: 50%;
-    margin: 5.6em auto;
-    text-align: center;
-}
-
-main img {
-    width: 50%;
-}
-
-input {
-    width: 60%;
-    padding: 0.8em;
-    border-radius: 30px;
-    border: 1px solid gray;
-    margin-bottom: 10px;
-}
-
-.button-container button {
-    padding: 1em;
-    border: none;
-}
-
-
-/* For the text of the language option */
-
-.link-text {
-    margin-top: 15px;
-    align-content: space-between;
-}
-
-
-/* Targeted the links of the Language option*/
-
-.link-text a {
-    text-decoration: none;
-    color: blue;
-}
-
-footer {
-    background-color: rgb(240, 236, 236);
-}
-
-.footer-top {
-    padding: 1em;
-}
-
-.footer-bottom {
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2em;
-}
-
-
-/* Targeting the links for the right part of the footer */
-
-.left a {
-    margin-right: 1em;
-}
-
-
-/* Targeting the links for the right part of the footer */
-
-.right a {
-    margin-right: 1em;
-}
+    body,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        width: 13%;
+        margin-top: 0.3em;
+        padding: 2em;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    nav img {
+        height: 20px;
+    }
+    
+    main {
+        width: 50%;
+        margin: 5.6em auto;
+        text-align: center;
+    }
+    
+    main img {
+        width: 50%;
+    }
+    
+    .input-container {
+        display: flex;
+        margin: auto;
+        width: 60%;
+        border-radius: 30px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+    }
+    
+    .search-icon {
+        flex: 1;
+        width: 30px;
+        height: 30px;
+        margin-top: 1em;
+    }
+    
+    .microphone-icon {
+        flex: 1;
+        width: 30px;
+        height: 30px;
+        margin-top: 0.7em;
+    }
+    
+    input {
+        flex: 10;
+        width: 60%;
+        padding: 0.8em;
+        border-radius: 30px;
+        border: 1px solid white;
+        margin-bottom: 10px;
+    }
+    
+    .button-container button {
+        padding: 1em;
+        border: none;
+    }
+    /* For the text of the language option */
+    
+    .link-text {
+        margin-top: 15px;
+        align-content: space-between;
+    }
+    /* Targeted the links of the Language option*/
+    
+    .link-text a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    footer {
+        background-color: rgb(240, 236, 236);
+    }
+    
+    .footer-top {
+        padding: 1em;
+    }
+    
+    .footer-bottom {
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2em;
+    }
+    /* Targeting the links for the right part of the footer */
+    
+    .left a {
+        margin-right: 1em;
+        flex: 10;
+    }
+    /* Targeting the links for the right part of the footer */
+    
+    .right a {
+        margin-right: 1em;
+        flex: 10;
+    }
+    
+    .middle a {
+        flex: 10;
+    }
+    
+    .input-container {
+        display: flex;
+        margin: auto;
+        width: 60%;
+        border-radius: 30px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 760px) {
+        .input-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            /* padding-left: 23px; */
+            /* flex-direction: column-reverse; */
+        }
+        .search-icon {
+            flex: 1;
+            width: 100vw;
+            height: 50%;
+            margin-top: 1em;
+        }
+        .microphone-icon {
+            flex: 1;
+            width: 30px;
+            height: 30px;
+            margin-top: 1em;
+        }
+        nav {
+            justify-items: space-around;
+            display: flex;
+        }
+        input {
+            flex: 10;
+            width: 50%;
+            padding: 0.8em;
+            border-radius: 30px;
+            border: 1px solid white;
+            margin-bottom: 10px;
+        }
+    }
